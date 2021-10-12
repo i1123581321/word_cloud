@@ -2,7 +2,7 @@
 File Created: 2021/10/12 11:37:46
 Author: ZhengxuanQian (zhengxuanqian@smail.nju.edu.cn)
 -----
-Last Modified: 2021/10/12 11:47:38
+Last Modified: 2021/10/12 02:07:09
 Modified By: ZhengxuanQian (zhengxuanqian@smail.nju.edu.cn>)
 '''
 
@@ -48,10 +48,10 @@ def get_weibo() -> list[str]:
                         print(text)
                         result.append(text)
         time.sleep(60 + random.randint(0, 60))
-        result.reverse()
-        result = [html.unescape(x) for x in result]
-        print(len(result))
-        return result
+    result.reverse()
+    result = [html.unescape(x) for x in result]
+    print(len(result))
+    return result
 
 if __name__ == "__main__":
     pass
